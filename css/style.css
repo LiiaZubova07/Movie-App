@@ -92,4 +92,31 @@ h6 {
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	background-color: #1a191f;
+}
+.header {
+}
+.header__content {
+}
+.header__logo {
+}
+.header__search {
+}
+.movies {
+}
+.movie {
+}
+.movie__cover-inner {
+}
+.movier__cover {
+}
+.movie__info {
+}
+.movie__title {
+}
+.movie__category {
+}
+.movie__average {
+}
+.movie__average-green {
 }
