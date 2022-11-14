@@ -94,29 +94,44 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: #1a191f;
 }
-.header {
+
+.container {
+	margin: 0 auto;
 }
+
 .header__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px;
+	height: 60px;
 }
+
 .header__logo {
+	font-style: 32px;
+	color: #ffffff;
 }
+
 .header__search {
+	padding: 8px;
+	border: 2px solid #1a191f;
+	border-radius: 5px;
 }
-.movies {
-}
-.movie {
-}
-.movie__cover-inner {
-}
-.movier__cover {
-}
-.movie__info {
-}
-.movie__title {
-}
-.movie__category {
-}
-.movie__average {
-}
-.movie__average-green {
-}
+
+.movies {}
+
+.movie {}
+
+.movie__cover-inner {}
+
+.movier__cover {}
+
+.movie__info {}
+
+.movie__title {}
+
+.movie__category {}
+
+.movie__average {}
+
+.movie__average-green {}
