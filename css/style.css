@@ -220,25 +220,38 @@ body {
 	flex-direction: column;
 }
 
-.modal__card {
-}
 .modal__movie-backdrop {
+	width: 100%;
+	margin: 0 auto;
 }
-.modal__movie-title {
-}
-.modal__movie-release-year {
-}
+
+.modal__movie-title {}
+
+.modal__movie-release-year {}
+
 .modal__movie-info {
+	margin-left: 20px;
 }
-.loader {
-}
-.modal__movie-genre {
-}
-.modal__movie-runtime {
-}
+
+.loader {}
+
+.modal__movie-genre {}
+
+.modal__movie-runtime {}
+
 .modal__movie-site {
+	color: #ffd80e;
 }
-.modal__movie-overview {
+
+.modal__movie-overview {}
+
+.modal__button-close {}
+
+ul li {
+	padding: 5px;
 }
-.modal__button-close {
+
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
 }

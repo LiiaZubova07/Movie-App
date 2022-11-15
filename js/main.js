@@ -17,7 +17,6 @@ async function getMovies(url) {
   showMovies(respData);
 }
 
-
 //получение фильма
 function getClassByRate(vote) {
   if (vote >= 7) {
@@ -53,6 +52,7 @@ function showMovies(data) {
 </div>
 </div>
 `;
+    movieEl.addEventListener('click', () => openModal(movie.filmId));
     moviesEl.appendChild(movieEl);
   });
 }
@@ -71,9 +71,12 @@ form.addEventListener('submit', (e) => {
 });
 
 //Modal
-const modalEl = document.querySelector('modal');
+const modalEl = document.querySelector('.modal');
 
-modalEl.innerHTML = `
+async function openModal(id) {
+  modalEl.classList.add('modal-show');
+
+  modalEl.innerHTML = `
 <div class="modal__card">
 <img src="" alt="" class="modal__movie-backdrop">
 <h2>
@@ -90,3 +93,29 @@ modalEl.innerHTML = `
 <button class="modal__button-close">Закрыть</button>
 </div>
 `;
+
+//тык на кнопку и модалка закрыта
+const btnClose = document.querySelector('.modal__button-close');
+btnClose.addEventListener('click', () => closeModal());
+}
+
+function closeModal() {
+	modalEl.classList.remove('modal-show');
+}
+
+//тык на любое место и модалка закрыта
+window.addEventListener('click', (e) => {
+	if (e.target === modalEl){
+		closeModal();
+	}
+});
+
+//обработчик на кнопку
+window.addEventListener('keydown', (e) => {
+	if (e.keyCode === 27) {
+		modalEl.classList.remove('modal-show');
+	}
+}
+);
+
+
