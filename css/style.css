@@ -221,16 +221,27 @@ body {
 }
 
 .modal__movie-backdrop {
-	width: 100%;
+	width: 200px;
 	margin: 0 auto;
 }
 
-.modal__movie-title {}
+.modal__movie-title {
+	font-size: 20px;
+	margin-left: 20px;
+	padding: 5px;
+	font-weight: bold;
+}
 
-.modal__movie-release-year {}
+.modal__movie-release-year {
+	font-size: 16px;
+	margin-left: 20px;
+	padding: 5px;
+}
 
 .modal__movie-info {
 	margin-left: 20px;
+	font-size: 16px;
+	line-height: 1.5;
 }
 
 .loader {}
@@ -245,7 +256,13 @@ body {
 
 .modal__movie-overview {}
 
-.modal__button-close {}
+.modal__button-close {
+	margin: 10px;
+	width: auto;
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+}
 
 ul li {
 	padding: 5px;
