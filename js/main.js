@@ -89,4 +89,4 @@ modalEl.innerHTML = `
 </ul>
 <button class="modal__button-close">Закрыть</button>
 </div>
-`ж
+`;

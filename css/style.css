@@ -189,3 +189,56 @@ body {
 .movie__average-red {
 	border: 3px solid red;
 }
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: width 2s;
+}
+
+.modal-show {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal__card {
+	background-color: #ffffff;
+	max-width: 600px;
+	padding: 16px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+	background-color: #1a191f;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal__card {
+}
+.modal__movie-backdrop {
+}
+.modal__movie-title {
+}
+.modal__movie-release-year {
+}
+.modal__movie-info {
+}
+.loader {
+}
+.modal__movie-genre {
+}
+.modal__movie-runtime {
+}
+.modal__movie-site {
+}
+.modal__movie-overview {
+}
+.modal__button-close {
+}
