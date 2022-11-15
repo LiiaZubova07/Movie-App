@@ -17,6 +17,8 @@ async function getMovies(url) {
   showMovies(respData);
 }
 
+
+//получение фильма
 function getClassByRate(vote) {
   if (vote >= 7) {
     return 'green';
@@ -67,3 +69,24 @@ form.addEventListener('submit', (e) => {
     search.value = '';
   }
 });
+
+//Modal
+const modalEl = document.querySelector('modal');
+
+modalEl.innerHTML = `
+<div class="modal__card">
+<img src="" alt="" class="modal__movie-backdrop">
+<h2>
+	<span class="modal__movie-title">Название</span>
+	<span class="modal__movie-release-year">Год выпуска</span>
+</h2>
+<ul class="modal__movie-info">
+	<div class="loader"></div>
+	<li class="modal__movie-genre">Жанр</li>
+	<li class="modal__movie-runtime">Время</li>
+	<li>Сайт: <a class="modal__movie-site"></a></li>
+	<li class="modal__movie-overview">Описание</li>
+</ul>
+<button class="modal__button-close">Закрыть</button>
+</div>
+`ж
