@@ -167,7 +167,7 @@ body {
 	left: 10px;
 	border-radius: 50%;
 	width: auto;
-	height: auto;
+	height: 36px;
 	padding: 10px;
 	display: flex;
 	justify-content: center;
@@ -175,6 +175,7 @@ body {
 	background-color: #1a191f;
 	color: #ffffff;
 	font-size: 14px;
+	text-align: center;
 }
 
 .movie__average-green {
