@@ -161,12 +161,6 @@ body {
 	padding: 10px 0;
 }
 
-@media screen and (max-width: 500px){
-	.movies {
-		width: auto;
-	}
-}
-
 .movie__average {
 	position: absolute;
 	top: 10px;
